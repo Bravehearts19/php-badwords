@@ -2,8 +2,8 @@
 
 $text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse perferendis animi laboriosam distinctio sapiente ipsum totam eius sint, delectus eum possimus! Aliquid sed excepturi illo cupiditate nostrum necessitatibus sint.";
 $textLength = strlen($text);
-$badWord = $_GET("badWord");
-$textToPrint = str_ireplace($badWord, "***", $text)
+$badWord = $_GET['badWord'];
+$textToPrint = str_ireplace ($badWord, "***", $text);
 
 ?>
 
@@ -20,8 +20,14 @@ $textToPrint = str_ireplace($badWord, "***", $text)
         <header></header>
         <main>
             <p>
+                Ecco il testo:
+                <?php echo $text ?> <br>
+                <br>
+                Ecco la lunghezza del testo:
+                <?php echo $textLength ?> <br>
+                <br>
+                Ecco il testo censurato:
                 <?php echo $textToPrint ?> <br>
-                <?php echo $textLength ?>
             </p>
         </main>
         <footer></footer>
