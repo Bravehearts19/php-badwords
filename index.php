@@ -3,7 +3,7 @@
 $text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse perferendis animi laboriosam distinctio sapiente ipsum totam eius sint, delectus eum possimus! Aliquid sed excepturi illo cupiditate nostrum necessitatibus sint.";
 $textLength = strlen($text);
 $badWord = $_GET("badWord");
-$textToPrint = str_replace($badWord, "***", $text)
+$textToPrint = str_ireplace($badWord, "***", $text)
 
 ?>
 
